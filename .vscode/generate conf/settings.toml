@@ -1,0 +1,6 @@
+# Set to true to hide
+
+js   = true
+git  = true
+conf = true
+lint = true

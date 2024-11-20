@@ -1,22 +1,17 @@
 {
 	"files.exclude": {
-		// Js files
-		"bun.lockb": true,
-		"node_modules": true,
-		".svelte-kit": true,
-
-		// Git files
-		".gitattributes": true,
-		".gitignore": true,
-
-		// Configs
-		"project.inlang": true,
-		".npmrc": true,
-		".prettierignore": true,
-		".prettierrc": true,
-		"eslint.config.js": true,
-		"postcss.config.js": true,
-		"tsconfig.json": true,
-		"vite.config.ts": true
+		"bun.lockb": 			true,
+		"node_modules": 		true,
+		".svelte-kit": 			true,
+		".gitattributes": 		true,
+		".gitignore": 			true,
+		"project.inlang":		true,
+		".npmrc":				true,
+		"postcss.config.js":	true,
+		"tsconfig.json":		true,
+		"vite.config.ts":		true,
+		".prettierignore":		true,
+		".prettierrc":			true,
+		"eslint.config.js":		true
 	}
 }
