@@ -10,7 +10,6 @@
 		".gitignore": true,
 
 		// Configs
-		"project.inlang": true,
 		".npmrc": true,
 		".prettierignore": true,
 		".prettierrc": true,

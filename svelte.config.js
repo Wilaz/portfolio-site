@@ -1,4 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
+import path from 'path';
 import { mdsvex } from 'mdsvex';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
@@ -7,7 +8,10 @@ export default {
 	preprocess: [vitePreprocess(), mdsvex()],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		alias: {
+			'@componets': path.resolve('./src/componets')
+		}
 	},
 
 	extensions: ['.svelte', '.svx']

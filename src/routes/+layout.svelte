@@ -1,16 +1,18 @@
 <script lang="ts">
-	import { i18n } from '$lib/i18n';
-	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
-	import Navbar from './navbar.svelte';
-	import Footer from './footer.svelte';
+	import Navbar from '@componets/navbar.svelte';
+	import Footer from '@componets/footer.svelte';
 	import '../app.css';
 	let { children } = $props();
 </script>
 
+<div class="flex flex-col h-screen">
+
 <Navbar />
 
-<ParaglideJS {i18n}>
+<div class="flex-grow">
 	{@render children()}
-</ParaglideJS>
+</div>
 
 <Footer />
+
+</div>
