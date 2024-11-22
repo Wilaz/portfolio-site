@@ -1,0 +1,24 @@
+{
+	"files.exclude": {
+		// Js files
+		"bun.lockb": 			${js},
+		"node_modules": 		${js},
+		".svelte-kit": 			${js},
+
+		// Git files
+		".gitattributes": 		${git},
+		".gitignore": 			${git},
+
+		// Configs
+		"project.inlang":		${conf},
+		".npmrc":				${conf},
+		"postcss.config.js":	${conf},
+		"tsconfig.json":		${conf},
+		"vite.config.ts":		${conf},
+
+		// Linters
+		".prettierignore":		${lint},
+		".prettierrc":			${lint},
+		"eslint.config.js":		${lint}
+	}
+}
