@@ -1,24 +1,5 @@
 {
 	"files.exclude": {
-<<<<<<< HEAD
-		// Js files
-		"bun.lockb": true,
-		"node_modules": true,
-		".svelte-kit": true,
-
-		// Git files
-		".gitattributes": true,
-		".gitignore": true,
-
-		// Configs
-		".npmrc": true,
-		".prettierignore": true,
-		".prettierrc": true,
-		"eslint.config.js": true,
-		"postcss.config.js": true,
-		"tsconfig.json": true,
-		"vite.config.ts": true
-=======
 		"bun.lockb": 			true,
 		"node_modules": 		true,
 		".svelte-kit": 			true,
@@ -32,6 +13,5 @@
 		".prettierignore":		true,
 		".prettierrc":			true,
 		"eslint.config.js":		true
->>>>>>> dc274410c1e8bfa4796d7528e4ca587504f69e41
 	}
 }
