@@ -1,1 +1,10 @@
-<h2>hello world</h2>
+<script lang="ts">
+    import { Canvas }   from '@threlte/core';
+    import Homepage     from '@componets/homepage.svelte';
+</script>
+
+<div>
+    <Canvas>
+        <Homepage />
+    </Canvas>
+</div>
