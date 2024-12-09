@@ -7,6 +7,10 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 export default {
 	preprocess: [vitePreprocess(), mdsvex()],
 
+	compilerOptions: {
+		runes: true
+	},
+
 	kit: {
 		adapter: adapter(),
 		alias: {

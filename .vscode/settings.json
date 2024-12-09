@@ -5,7 +5,6 @@
 		".svelte-kit": 			true,
 		".gitattributes": 		true,
 		".gitignore": 			true,
-		"project.inlang":		true,
 		".npmrc":				true,
 		"postcss.config.js":	true,
 		"tsconfig.json":		true,

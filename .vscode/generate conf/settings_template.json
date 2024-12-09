@@ -10,7 +10,6 @@
 		".gitignore": 			${git},
 
 		// Configs
-		"project.inlang":		${conf},
 		".npmrc":				${conf},
 		"postcss.config.js":	${conf},
 		"tsconfig.json":		${conf},
