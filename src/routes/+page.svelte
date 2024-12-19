@@ -1,10 +1,8 @@
 <script lang="ts">
-    import { Canvas }   from '@threlte/core';
-    import Homepage     from '@componets/homepage.svelte';
+	import { Canvas } from '@threlte/core';
+	import Homepage from '@componets/homepage.svelte';
 </script>
 
-<div>
-    <Canvas>
-        <Homepage />
-    </Canvas>
-</div>
+<Canvas>
+	<Homepage />
+</Canvas>

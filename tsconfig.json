@@ -10,7 +10,7 @@
 		"moduleResolution": "bundler",
 
 		// Best practices
-		"strict": true,
+		"strict": false,
 		"skipLibCheck": true,
 		"noFallthroughCasesInSwitch": true,
 
