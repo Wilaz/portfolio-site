@@ -12,3 +12,4 @@
 
 <T.DirectionalLight castShadow={true} position={sunPosition.toArray()}/>
 <T is={sky} />
+<T.AmbientLight />

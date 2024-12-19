@@ -4,16 +4,15 @@
 	import { Vector3, CatmullRomCurve3 } from 'three';
 	const { camera } = useThrelte();
 	import Sky from '@componets/sky.svelte';
-	import Beach from '../beach.svelte';
+	import Diorama from '@models/diorama.svelte';
 
 	let scrollAmount: number = $state(0);
-	const pageHeight: number = 800;
+	const pageHeight: number = 1600;
 
 	const spline = new CatmullRomCurve3([
-		new Vector3(5, 0, 5),
-		new Vector3(5, 0, -5),
-		new Vector3(-5, 0, -5),
-		new Vector3(-5, 0, 5)
+		new Vector3(0, 1, 0),
+		new Vector3(0, 1, 1),
+		new Vector3(1, 1, 0)
 	]);
 
 	function clamp(min, x, max) {
@@ -22,7 +21,7 @@
 
   	// Handles moving
   	const handleScroll = (event: WheelEvent) => {
-		scrollAmount = clamp(0, scrollAmount + event.deltaY / pageHeight, 1);
+		scrollAmount = clamp(0, scrollAmount + event.deltaY / pageHeight, .99);
 	};
 
 	onMount(() => {
@@ -34,20 +33,15 @@
 
 	function moveCameraAlongSpline() {
 		const point = spline.getPointAt(scrollAmount);
-		const origin = new Vector3(0,0,0)
+		const rot = spline.getPointAt(scrollAmount + 0.01);
 		$camera.position.set(point.x, point.y, point.z);
-		$camera.lookAt(origin)
+		$camera.lookAt(rot)
 	};
 
 	useTask(() => {
 		moveCameraAlongSpline();
 	})
 </script>
-
-<T.Mesh >
-	<T.TorusGeometry />
-	<T.MeshStandardMaterial color="hotpink" />
-</T.Mesh>
 
 <T.PerspectiveCamera
 	fov={60}
@@ -58,4 +52,4 @@
 
 <Sky />
 
-<Beach />
+<Diorama />

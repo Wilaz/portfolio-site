@@ -14,7 +14,8 @@ export default {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			'@componets': path.resolve('./src/componets')
+			'@componets': path.resolve('./src/componets'),
+			'@models': path.resolve('./src/models')
 		}
 	},
 
