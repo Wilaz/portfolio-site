@@ -3,13 +3,12 @@
 	import { Sky } from 'three/addons/objects/Sky.js';
 	import { Vector3 } from 'three';
 
-	const sunPosition = new Vector3(.25,.15,.25)
+	const sunPosition = new Vector3(.2,-.2,-1)
 
 	const sky = new Sky();
 	sky.scale.setScalar(450000);
 	sky.material.uniforms['sunPosition'].value = sunPosition;
 </script>
 
-<T.DirectionalLight castShadow={true} position={sunPosition.toArray()}/>
+<T.PointLight castShadow={true} position={sunPosition.toArray()}/>
 <T is={sky} />
-<T.AmbientLight />
